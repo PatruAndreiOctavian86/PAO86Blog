@@ -1,0 +1,46 @@
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width: 100%;
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+header nav a {
+    color: #1b0303;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+header nav a:hover {
+    color: rgb(255, 0, 43);
+    transform: scale(1.1);
+}
+button.prev { left: 0;}
+button.next { right: 0; }
+
+.title {
+    position: fixed;
+    top:auto;
+    transition: color 0.3s ease, transform 0.3s ease;
+}

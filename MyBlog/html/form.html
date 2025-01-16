@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <script src="../js/form.js" defer></script>
+    <style>
+     
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Contact Us</h1>
+        <form action="/submit" method="post" onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <script src="../js/form.js"></script>
+        <a href="../html/index.html" class="home-button">Go to Home</a>
+        <a href="gallery.html" class="home-gallery"> Gallery</a>
+    </div>
+</body>
+</html>
